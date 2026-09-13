@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090817">
+  <title>For You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="particles"></div>
+  <div id="cursorGlow" aria-hidden="true"></div>
+  <div class="aurora"></div>
+  <button id="musicToggle" class="music-toggle" aria-label="Toggle music">🎵 OFF</button>
+
+  <main>
+    <!-- SCENE 01 -->
+    <section class="scene active portal-scene" id="scene1">
+      <div class="portal-moon" aria-hidden="true"></div>
+      <div class="portal-sky" aria-hidden="true"></div>
+      <div class="center portal-content">
+        <!-- HER BIRTHDAY: 15 September 2005 -->
+        <div class="date-reveal" aria-label="15 September 2005">
+          <span class="date-star">✦</span>
+          <p class="date" id="birthdayDate"><span>15</span><b>•</b><span>09</span><b>•</b><span>2005</span></p>
+          <p class="date-caption">A special day was born. <span>🌙</span></p>
+        </div>
+        <p class="portal-title" id="portalTitle"><span class="moon-icon">🌙</span></p>
+        <div class="secret-card" id="secretCard">
+          <div class="card-shine" aria-hidden="true"></div>
+          <p class="card-kicker">A private little portal</p>
+          <h1>A little secret... <span>🔐</span></h1>
+          <p class="card-subtitle">Only you can unlock this.</p>
+          <form id="passwordForm" novalidate>
+            <label class="password-field" for="passwordInput">
+              <span class="lock-icon" id="lockIcon">🔒</span>
+              <input id="passwordInput" type="password" inputmode="text" autocomplete="off" placeholder="Enter the secret password" aria-label="Secret password">
+              <button class="eye-button" id="togglePassword" type="button" aria-label="Show password">◉</button>
+            </label>
+            <button class="btn primary confirm-button" type="submit">CONFIRM <span>✨</span></button>
+          </form>
+          <p class="password-message" id="passwordMessage" aria-live="polite"></p>
+          <button class="hint-trigger" id="hintTrigger" type="button">💡 NEED A HINT?</button>
+          <div class="hint-bubble hidden" id="hintBubble"><span id="hintText"></span><button id="hideHint" type="button" aria-label="Hide hint">×</button></div>
+        </div>
+        <p class="portal-footer">This little world is only for you. <span>✦</span></p>
+      </div>
+      <div class="royal-transition" id="royalTransition" aria-hidden="true">
+        <div class="transition-moon"></div>
+        <div class="angel"><span class="angel-halo">✦</span><span class="angel-wings"></span><span class="angel-body"></span><span class="angel-bow"><i></i><b></b></span><img class="magic-arrow" src="assets/photos/arrow.png" alt=""></div>
+        <div class="heart-tree"><img class="tree-image" src="assets/photos/tree.png" alt=""><div class="tree-leaves" id="treeLeaves"></div></div>
+        <div class="falling-hearts" id="fallingHearts"></div>
+      </div>
+      <div class="instruction-screen" id="instructionScreen" aria-hidden="true">
+        <div class="instruction-moon"></div><div class="instruction-stars"></div>
+        <div class="instruction-card"><p class="instruction-kicker">A quiet word before you enter</p><h1>Before you enter... <span>🌙❤️</span></h1><p class="instruction-main">Read every line, every word, and every little message from the heart. ❤️</p><p class="instruction-music">Please don't turn off the music. 🎶🌙</p><p class="instruction-small">Take your time... this little world was made just for you. ✨</p><button class="ready-story" id="readyStory" type="button">I'M READY ✨</button></div>
+      </div>
+    </section>
+
+    <!-- SCENE 02 -->
+    <section class="scene ancient-scene" id="scene2">
+      <div class="royal-room" aria-hidden="true"><div class="curtain curtain-left"></div><div class="curtain curtain-right"></div><div class="candle candle-left"></div><div class="candle candle-right"></div><div class="table-line"></div></div>
+      <div class="royal-dust" id="royalDust" aria-hidden="true"></div>
+      <div class="letter-stage">
+        <div class="parchment-shadow"></div>
+        <article class="ancient-paper" id="ancientPaper">
+          <div class="paper-fold paper-fold-top"></div><div class="paper-fold paper-fold-bottom"></div>
+          <div class="paper-stain stain-one"></div><div class="paper-stain stain-two"></div>
+          <div class="paper-inner">
+            <p class="paper-eyebrow">A letter from the royal archives</p>
+            <div class="letter-content" id="letterContent">
+              <h1 class="letter-title writing-block" data-writing="Happy 21st Birthday, Muneefa 🌙❤️"></h1>
+              <p class="writing-block" data-writing="Happy Birthday to you, Muneefa! 🎂✨"></p>
+              <p class="writing-block" data-writing="Today, you’re turning 21, and I just want to wish you a life filled with happiness, peace, success, beautiful memories, and everything your heart wishes for. You deserve so many good things in life, and I truly hope every year ahead brings you closer to the person you dream of becoming."></p>
+              <p class="writing-block" data-writing="Sometimes, life brings certain people into our lives unexpectedly, and somehow they become more important than we ever imagined. We met in 2026, and even though it hasn’t been that long, you have already become one of the important people I’ve met in my life. I’m genuinely grateful that our paths crossed."></p>
+              <p class="writing-block" data-writing="This is just your 21st birthday, but I hope it won’t be the last one we celebrate together. I want us to celebrate many, many more birthdays together—with more memories, more laughter, more silly moments, more adventures, and more years to look back on someday. 🫶🏻"></p>
+              <p class="writing-block" data-writing="I don’t know what the future has written for us, but I know what I wish for. I want to stay beside you for many years, through the good days and the difficult ones. I don’t want any difference between us, including religion, to become a reason that separates us. I hope that whatever happens, the bond and memories we share will always have a special place in both our lives."></p>
+              <p class="writing-block" data-writing="Maybe I can’t promise what every tomorrow will look like, but I can honestly say that I want you to be a part of many of my tomorrows. ❤️"></p>
+              <p class="writing-block" data-writing="And if someday life takes us in different directions, if we somehow can’t stay together the way we wish, then please remember one thing: you were someone truly special to me. Please remember me for the rest of your life, not with sadness, but as someone who genuinely cared about you and wished nothing but happiness for you."></p>
+              <p class="writing-block" data-writing="For now, though, let’s not think too much about the future. Today is about you. So smile, enjoy your day, make beautiful memories, and remember that somewhere in this world, there is someone who is genuinely happy that you were born."></p>
+              <p class="writing-block" data-writing="Happy 21st Birthday, Muneefa. 🌙🎂❤️"></p>
+              <p class="writing-block" data-writing="Here’s to your 21st year… and hopefully, to many more birthdays that we get to celebrate together. 🫂✨"></p>
+              <p class="letter-signature writing-block" data-writing="— Eswaran"></p>
+              <div class="memory-question hidden" id="memoryQuestion">
+                <p>Do you want to see our memories? <span>❤️</span></p>
+                <div class="memory-actions"><button class="royal-button yes-memory" id="yesMemory" type="button">YES ❤️</button><button class="royal-button no-memory" id="noMemory" type="button">NO 🙈</button></div>
+                <small id="memoryHint" aria-live="polite"></small>
+              </div>
+            </div>
+          </div>
+          <img class="quill" id="quill" src="assets/photos/feather.png" alt="" aria-hidden="true">
+          <div class="ink-bottle" id="inkBottle" aria-hidden="true"><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCENE 03 -->
+    <section class="scene scrapbook-scene" id="scene3">
+      <div class="scrapbook-atmosphere" aria-hidden="true"><span class="candle-glow"></span><span class="scrap-particles"></span><span class="scrap-petals"></span></div>
+      <div class="scrapbook-board">
+        <div class="board-tape tape-top"></div><div class="board-tape tape-side"></div>
+        <header class="scrapbook-heading"><p class="scrap-kicker">A private little album</p><h1>Our Little Memories <span>❤️</span></h1><p>Some moments are too special to forget...</p><small class="scrap-instruction">Tap a photo to open the memory ❤️</small></header>
+        <div class="memory-thread" aria-hidden="true"></div>
+        <article class="memory-piece memory-one" data-memory="ice">
+          <span class="paper-clip"></span><span class="dried-flower flower-one">✽</span>
+          <button class="scrap-photo" type="button" aria-expanded="false"><img src="assets/photos/ice.jpg" alt="Our first ice cream together"><span class="photo-caption">Memory I 🍦</span><small>open this memory...</small></button>
+          <div class="memory-note"><h2>Our first ice cream together. 🍦❤️</h2><p>It may look like just a small moment, but it was actually the <strong>first time we sat together and shared something so simple and sweet.</strong> A little ice cream, a little happiness, and a memory I’ll always keep. ✨</p></div>
+        </article>
+        <article class="memory-piece memory-two" data-memory="pictures">
+          <span class="paper-clip"></span><span class="dried-flower flower-two">❀</span>
+          <button class="scrap-photo photo-mall" type="button" aria-expanded="false"><img src="assets/photos/mall.jpg" alt="Our first picture together"><span class="photo-caption">Where it started ❤️</span></button>
+          <button class="scrap-photo photo-selfie" type="button" aria-expanded="false"><img src="assets/photos/selfie.jpg" alt="Our first selfie together"><span class="photo-caption">The first pictures</span></button>
+          <div class="memory-note"><h2>The first picture of us together. ❤️</h2><p>Maybe it looks like just a simple photo, but for me, this is where everything started. Every little memory, every moment, and everything we shared came after this picture. <strong>Our memories started here.</strong> ✨</p></div>
+        </article>
+        <article class="memory-piece memory-three" data-memory="onam">
+          <span class="torn-corner"></span><span class="dried-flower flower-three">✿</span>
+          <button class="scrap-photo" type="button" aria-expanded="false"><img src="assets/photos/onam.jpg" alt="Our Onam memory"><span class="photo-caption">A day to remember 🌸</span><small>open this memory...</small></button>
+          <div class="memory-note"><h2>This picture may not be clear, but the memory behind it is. ❤️</h2><p>Maybe the moment wasn’t captured perfectly, but at least we have this little, blurry piece of a beautiful day we shared. <strong>Some memories don’t need perfect pictures to stay forever.</strong> 🌸✨</p></div>
+        </article>
+        <section class="last-memory" id="lastMemory">
+          <div class="envelope-decoration"><span class="envelope-flap"></span><span class="wax-seal">♥</span></div>
+          <p class="scrap-kicker">There is one more memory...</p><h2>One more thing... ❤️</h2><p>There is a memory I saved for last.</p><small>Open when you're ready...</small>
+          <button class="wax-button" id="openLastMemory" type="button">ONE MORE MEMORY ✨</button>
+        </section>
+        <button class="btn primary continue scrapbook-continue" id="memoriesBtn">I've seen enough ❤️</button>
+      </div>
+    </section>
+
+    <!-- SCENE 04 -->
+    <section class="scene page4-scene" id="scene4">
+      <div class="page4-room" aria-hidden="true"><span class="page4-candle"></span><span class="page4-flower">✿</span><span class="page4-light"></span></div>
+      <div class="page4-dust" aria-hidden="true"></div>
+      <div class="page4-content">
+        <p class="page4-kicker">A deeper memory</p>
+        <h1>The Day Everything Started <span>❤️</span></h1>
+        <div class="page4-memory" id="page4Memory">
+          <div class="page4-tape"></div>
+          <div class="page4-photo-wrap">
+            <div class="page4-placeholder" id="page4Placeholder"><span>📷</span><strong>A memory waiting to be placed here...</strong><small>Add <em>assets/photos/start.jpg</em> when you are ready.</small></div>
+            <img class="page4-photo" id="page4Photo" src="assets/photos/start.jpg" alt="The day everything started">
+          </div>
+          <div class="page4-note" id="page4Note">
+            <h2>The Day Everything Started ❤️</h2>
+            <p>We never planned to take this picture, and maybe that’s what makes it so special. ❤️</p>
+            <p>This photo holds the memory of the day when <strong>everything quietly started.</strong> That day, we ended up being on the same team for the game and the dance. It felt like just another normal day at the time, but looking back now, it feels like something much more.</p>
+            <p>Because if we hadn’t been on the same team that day, maybe we would have never talked, never known each other, and none of these beautiful memories would exist. Sometimes, the most important moments in our lives happen without us even realizing their importance.</p>
+            <p class="page4-final-line"><strong>Everything started from this day, with a simple team, a simple moment, and two people who didn’t know how special they would become to each other.</strong> ✨❤️</p>
+            <p class="page4-afterthought">“Funny how one ordinary day can change everything.” ❤️</p>
+          </div>
+        </div>
+        <p class="page4-instruction">Tap the picture to discover the story ❤️</p>
+        <button class="page4-next" id="page4Next" type="button">Continue to the final letter ✦</button>
+      </div>
+    </section>
+
+    <!-- SCENE 05 -->
+    <section class="scene page5-scene" id="scene5">
+      <div class="page5-sky" aria-hidden="true"><span class="page5-moon"></span><span class="page5-clouds"></span><span class="page5-stars"></span></div>
+      <div class="page5-desk" aria-hidden="true"><span class="page5-candle candle-left"></span><span class="page5-candle candle-right"></span><span class="page5-ink"></span></div>
+      <div class="page5-dust" aria-hidden="true"></div>
+      <div class="page5-content">
+        <p class="page5-kicker">A final letter for you</p>
+        <article class="delivery-letter" id="deliveryLetter">
+          <div class="letter-border"></div><span class="letter-seal">♥</span>
+          <div class="delivery-paper">
+            <h1>A Little Message For You 🌙❤️</h1>
+            <div class="fixed-message">
+              <p>Muneefa, if you have reached this page, it means you have walked through all these little memories with me. ❤️</p>
+              <p>From the first simple moments to all the memories we have created, every little thing has become a part of a story that I will always remember.</p>
+              <p>I don't know what the future has waiting for us, but I'm really glad that our paths crossed. If we get the chance, I hope we get to create many more memories together.</p>
+              <p>So this isn't really the end of this little birthday world...</p>
+              <p>It's just one more memory for us to keep. 🌙✨</p>
+              <p><strong>Happy Birthday once again, Muneefa. ❤️</strong></p>
+              <p class="delivery-signature"><strong>— Eswaran</strong></p>
+            </div>
+            <label class="reply-label" for="replyMessage">Write something back to me... 💌</label>
+            <textarea id="replyMessage" placeholder="Write anything you want to tell me... ❤️" maxlength="1200"></textarea>
+            <button class="send-letter" id="sendLetter" type="button"><span class="send-feather">🪶</span><span>SEND THIS LETTER</span><span class="send-heart">♥</span></button>
+          </div>
+        </article>
+        <p class="delivery-status" id="deliveryStatus" aria-live="polite"></p>
+      </div>
+      <div class="flight-overlay" id="flightOverlay" aria-hidden="true"><div class="flying-letter"><span></span><b>♥</b></div><div class="flight-message" id="flightMessage">Your letter is on its way... ❤️</div></div>
+      <div class="whatsapp-fallback hidden" id="whatsappFallback"><h2>Your letter is ready to fly. 💌</h2><button id="openWhatsApp">OPEN WHATSAPP ✨</button><button id="copyMessage">COPY MESSAGE</button></div>
+    </section>
+
+    <!-- SCENE 06 -->
+    <section class="scene" id="scene6">
+      <div class="content center-content">
+        <p class="eyebrow">A tiny game</p>
+        <h2>Choose one... 👀</h2>
+        <div class="choice-grid">
+          <button class="choice-card" data-choice="memory"><b>❤️</b><span>MEMORY</span></button>
+          <button class="choice-card" data-choice="surprise"><b>🌸</b><span>SURPRISE</span></button>
+          <button class="choice-card" data-choice="secret"><b>✨</b><span>SECRET</span></button>
+        </div>
+        <div class="unlock-box hidden" id="unlockBox">
+          <div class="choice-icon" id="choiceIcon">❤️</div>
+          <h3 id="choiceTitle">Unlocked</h3>
+          <p id="choiceText"></p>
+        </div>
+        <p class="progress" id="progress">0 / 3 unlocked</p>
+        <button class="btn primary continue hidden" id="gameContinue">Everything unlocked ❤️</button>
+      </div>
+    </section>
+
+    <!-- SCENE 07 -->
+    <section class="scene" id="scene7">
+      <div class="center secret-hunt">
+        <p class="eyebrow">Look carefully...</p>
+        <h2>One little secret is hidden somewhere here.</h2>
+        <div class="hunt-area" id="huntArea">
+          <span class="hunt-star s1">✦</span><span class="hunt-star s2">✧</span>
+          <span class="hunt-heart h1">♡</span><span class="hunt-heart h2">♡</span>
+          <button class="secret-object" id="secretObject" aria-label="Hidden secret">✦</button>
+          <span class="hunt-flower f1">✿</span><span class="hunt-flower f2">✽</span>
+        </div>
+        <div id="foundMessage" class="hidden found-message">
+          <h3>YOU FOUND IT! 🎉</h3>
+          <p>Okay... you deserve another surprise. ❤️</p>
+          <button class="btn primary" id="foundContinue">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENE 08 -->
+    <section class="scene" id="scene8">
+      <div class="center">
+        <p class="eyebrow">Something from my heart</p>
+        <h2>A Letter For You 💌</h2>
+        <div class="envelope-wrap">
+          <div class="envelope" id="envelope"><div class="flap"></div><div class="paper" id="letterPaper"></div></div>
+        </div>
+        <button class="btn primary" id="openLetter">OPEN MY LETTER</button>
+        <div class="letter-text hidden" id="letterText">[WRITE YOUR PERSONAL BIRTHDAY LETTER HERE]</div>
+        <button class="btn primary continue hidden" id="letterContinue">Continue 💗</button>
+      </div>
+    </section>
+
+    <!-- SCENE 09 -->
+    <section class="scene" id="scene9">
+      <div class="center">
+        <p class="eyebrow">There's still one thing left...</p>
+        <h2>Your Gift 🎁</h2>
+        <div class="gift" id="gift">
+          <div class="lid"></div><div class="box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+        </div>
+        <button class="btn primary" id="openGift">OPEN YOUR GIFT</button>
+        <div class="gift-reveal hidden" id="giftReveal">
+          <!-- SPECIAL MEDIA: Replace with an image/video of your choice -->
+          <div class="photo-placeholder gift-media">YOUR SPECIAL PHOTO / VIDEO</div>
+          <p>Some surprises are better when they're yours. ❤️</p>
+        </div>
+        <button class="btn primary continue hidden" id="giftContinue">One last thing...</button>
+      </div>
+    </section>
+
+    <!-- SCENE 10 -->
+    <section class="scene" id="scene10">
+      <div class="center minimal">
+        <p class="eyebrow">Before you go...</p>
+        <h2>I have one last question.</h2>
+        <p class="big-question">Will you stay with me for all the memories we haven't made yet? ❤️</p>
+        <div class="buttons">
+          <button class="btn primary" id="stayBtn">YES ❤️</button>
+          <button class="btn ghost runaway" id="thinkBtn">I'LL THINK ABOUT IT 😏</button>
+        </div>
+        <p class="hint" id="stayHint"></p>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="scene final-scene" id="final">
+      <div class="final-stars"></div>
+      <div class="center">
+        <p class="eyebrow final-small">For the person who makes life brighter</p>
+        <h1 class="birthday-title">HAPPY BIRTHDAY</h1>
+        <h2 class="her-name">[HER NAME] ❤️</h2>
+        <p class="final-line">You're one of the most beautiful parts of my life.</p>
+        <!-- FINAL PHOTO: Replace placeholder with your favorite photo -->
+        <div class="final-photo"><div class="photo-placeholder final-placeholder">FINAL SPECIAL PHOTO</div></div>
+        <p class="final-copy">Here's to every memory we've made,<br>and every beautiful one still waiting for us.</p>
+        <h3>Happy Birthday, ❤️</h3>
+        <button class="btn ghost" id="replayBtn">REPLAY OUR STORY ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="photoModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <img class="photo-placeholder modal-photo" id="modalPhoto" alt="Selected memory">
+      <p class="eyebrow" id="modalDate">DATE</p>
+      <h3 id="modalTitle">PHOTO</h3>
+      <p id="modalMemory">Add your memory here...</p>
+    </div>
+  </div>
+
+  <audio id="music" loop preload="none">
+    <source src="assets/music/bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
