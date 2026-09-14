@@ -48,7 +48,7 @@ function dropHearts(){
   if(!transition||!container||!treeLeaves)return;
   [...treeLeaves.querySelectorAll(".tree-leaf")].forEach((leaf,index)=>{
     const rect=leaf.getBoundingClientRect(), parentRect=transition.getBoundingClientRect();
-    leaf.classList.remove("tree-leaf");leaf.classList.add("detached-leaf");leaf.style.left=`${rect.left-parentRect.left}px`;leaf.style.top=`${rect.top-parentRect.top}px`;leaf.style.setProperty("--wind-x",`${(Math.random()-.5)*260}px`);leaf.style.setProperty("--fall-rotation",`${(Math.random()-.5)*720}deg`);leaf.style.setProperty("--fall-scale",`${.7+Math.random()*.7}`);leaf.style.setProperty("--fall-duration",`${3.8+Math.random()*2.6}s`);leaf.style.setProperty("--fall-delay",`${index*.035}s`);container.appendChild(leaf);
+    leaf.classList.remove("tree-leaf");leaf.classList.add("detached-leaf");leaf.style.left=`${rect.left-parentRect.left}px`;leaf.style.top=`${rect.top-parentRect.top}px`;leaf.style.setProperty("--wind-x",`${(Math.random()-.5)*260}px`);leaf.style.setProperty("--fall-rotation",`${(Math.random()-.5)*720}deg`);leaf.style.setProperty("--fall-scale",`${.7+Math.random()*.7}`);leaf.style.setProperty("--fall-duration",`${2.8+Math.random()*1.8}s`);leaf.style.setProperty("--fall-delay",`${index*.02}s`);container.appendChild(leaf);
   });
 }
 function createTreeLeaves(){
@@ -76,7 +76,7 @@ function startScene02Transition(){
   setTimeout(()=>{
     scene.classList.remove("transitioning","zooming");
     showScene(2);
-  },11200);
+  },11500);
 }
 function openAncientPaper(){
   const paper=$("#ancientPaper");
@@ -221,8 +221,7 @@ function getWhatsAppUrl(){
   return `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(getWhatsAppMessage())}`;
 }
 function getWhatsAppMessage(){
-  const reply=$("#replyMessage")?.value.trim();
-  return reply?`${finalLetterMessage}\n\nHer message:\n${reply}`:finalLetterMessage;
+  return "It's Muneefa: 🌙❤️";
 }
 function openWhatsApp(){window.location.href=getWhatsAppUrl()}
 function initPage5(){
